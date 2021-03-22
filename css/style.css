@@ -2,6 +2,7 @@
     color: #204f87;
     font-size: 18px;
     font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #182147;
@@ -19,6 +20,7 @@
     font-weight: 700;
     font-size: 62px;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
 .hg{
     min-height: 90vh;
@@ -58,9 +60,11 @@
     text-transform: uppercase;
     font-size: 35px;
     font-weight: 700px;
+    font-family: 'Montserrat', sans-serif;
 }
 .who_we_are p{
     color: #b0b0b1;
+    font-family: 'Open Sans', sans-serif;
     
 }
 .what_we_do{
@@ -86,6 +90,7 @@
     text-transform: uppercase;
     font-size: 35px;
     font-weight: 700px;
+    font-family: 'Montserrat', sans-serif;
 }
 .img{
     position: relative;
@@ -119,6 +124,7 @@ transition: .4s all ease-in-out;
     font-size: 24px;
     opacity: 0;
     transition: .4s all ease-in-out;
+    font-family: 'Montserrat', sans-serif;
 }
 .img i {
     position: absolute;
