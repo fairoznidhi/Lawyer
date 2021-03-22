@@ -1,0 +1,141 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    font-size: 18px;
+    font-weight: 400;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #182147;
+}
+.banner{
+    margin-top: 2vh;
+    background-image : url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+}
+.banner h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 62px;
+    text-transform: uppercase;
+}
+.hg{
+    min-height: 90vh;
+    align-items: center;
+}
+.icon{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 20px;
+    animation: updown 1s linear infinite;
+    
+}
+@keyframes updown{
+    0%{
+        top:80%;
+    }
+    100%{
+        top:85%;
+    }
+}
+
+.who_we_are span{
+    display: inline-block;
+    width: 0px;
+    height: 3px;
+    background-color: #f2622c;
+    transition: .4s all ease-in-out;
+}
+.who_we_are:hover span{
+    width: 50px;
+}
+.who_we_are h1{
+    color: #204f87;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700px;
+}
+.who_we_are p{
+    color: #b0b0b1;
+    
+}
+.what_we_do{
+    background-color: #f7f8f8;
+    background-image: url(../images/what_we_do.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 60%;
+}
+.heading span{
+    display: inline-block;
+    width: 0px;
+    height: 3px;
+    background-color: #f2622c;
+    transition: .4s all ease-in-out;
+}
+.what_we_do:hover .heading span{
+    width: 50px;
+}
+.heading h1{
+    color: #204f87;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700px;
+}
+.img{
+    position: relative;
+}
+.img::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2b3083+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(43,48,131,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(43,48,131,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(43,48,131,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#2b3083',GradientType=0 ); /* IE6-9 */
+transition: .4s all ease-in-out;
+}
+.img:hover::before{
+    height: 100%;
+}
+
+.img h3{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.img i {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.img:hover h3{
+    opacity:1;
+    top:50%
+}
+.img:hover i{
+    opacity:1;
+    left:50%;
+}
