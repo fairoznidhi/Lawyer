@@ -78,3 +78,7 @@ footer i{
     color: #b1b7dd;
     padding-left: 3em;
 }
+footer i:hover{
+    color: #fff;
+    padding-left: 3em;
+}
