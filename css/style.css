@@ -1,147 +1,80 @@
-.navbar-light .navbar-nav .nav-link {
-    color: #204f87;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+.navbar-light .navbar-nav .nav-link { color: rgb(32, 79, 135); font-size: 18px; font-weight: 400; font-family: Montserrat, sans-serif; }
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover { color: rgb(24, 33, 71); }
+.banner { margin-top: 2vh; background-image: url("../images/banner.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; min-height: 90vh; }
+.banner h1 { color: rgb(255, 255, 255); font-weight: 700; font-size: 62px; text-transform: uppercase; font-family: Montserrat, sans-serif; }
+.hg { min-height: 90vh; align-items: center; }
+.icon { position: absolute; top: 80%; left: 50%; transform: translateX(-50%); color: rgb(255, 255, 255); font-size: 20px; animation: 1s linear 0s infinite normal none running updown; }
+@keyframes updown { 
+  0% { top: 80%; }
+  100% { top: 85%; }
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #182147;
-}
-.banner{
-    margin-top: 2vh;
-    background-image : url(../images/banner.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 90vh;
-}
-.banner h1 {
+.who_we_are span { display: inline-block; width: 0px; height: 3px; background-color: rgb(242, 98, 44); transition: all 0.4s ease-in-out 0s; }
+.who_we_are:hover span { width: 50px; }
+.who_we_are h1 { color: rgb(32, 79, 135); text-transform: uppercase; font-size: 35px; font-weight: 700; font-family: Montserrat, sans-serif; }
+.who_we_are p { color: rgb(176, 176, 177); font-family: "Open Sans", sans-serif; }
+.what_we_do { background-color: rgb(247, 248, 248); background-image: url("../images/what_we_do.png"); background-position: 100% 100%; background-repeat: no-repeat; background-size: 60%; }
+.heading span { display: inline-block; width: 0px; height: 3px; background-color: rgb(242, 98, 44); transition: all 0.4s ease-in-out 0s; }
+.what_we_do:hover .heading span, .contact:hover .heading span { width: 50px; }
+.heading h1 { color: rgb(32, 79, 135); text-transform: uppercase; font-size: 35px; font-weight: 700; font-family: Montserrat, sans-serif; }
+.img { position: relative; }
+.img::before { content: ""; position: absolute; bottom: 0px; left: 0px; width: 100%; height: 0px; background: linear-gradient(rgba(30, 87, 153, 0) 0%, rgb(43, 48, 131) 100%); transition: all 0.4s ease-in-out 0s; }
+.img:hover::before { height: 100%; }
+.img h3 { position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); color: rgb(255, 255, 255); text-transform: uppercase; text-align: center; font-size: 24px; opacity: 0; transition: all 0.4s ease-in-out 0s; font-family: Montserrat, sans-serif; }
+.img i { position: absolute; top: 80%; left: 40%; transform: translate(-50%, -50%); color: rgb(255, 255, 255); text-transform: uppercase; font-size: 30px; opacity: 0; transition: all 0.4s ease-in-out 0s; }
+.img:hover h3 { opacity: 1; top: 50%; }
+.img:hover i { opacity: 1; left: 50%; }
+.attorney { background-image: url("../images/attorney.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.attorney span { display: inline-block; background-color: rgb(242, 98, 44); width: 0px; height: 3px; transition: all 0.4s ease-in-out 0s; }
+.attorney:hover span { width: 50px; }
+.attorney h1 { color: rgb(255, 255, 255); text-transform: uppercase; font-size: 35px; font-weight: 700; font-family: Montserrat, sans-serif; }
+.attorney p { color: rgb(176, 176, 177); font-family: "Open Sans", sans-serif; }
+.attorney a, .language a { color: rgb(242, 98, 44); text-decoration: none; text-transform: uppercase; font-weight: 700; font-family: Montserrat, sans-serif; }
+.attorney a:hover, .language a:hover { color: rgb(235, 84, 28); }
+.attorney_image { position: relative; }
+.attorney_image::before { content: ""; position: absolute; width: 100%; height: 0px; bottom: 0px; background: linear-gradient(rgba(30, 87, 153, 0) 0%, rgba(34, 75, 146, 0) 32%, rgba(41, 54, 134, 0.9) 86%, rgba(43, 48, 131, 0.9) 100%); transition: all 0.4s ease-in-out 0s; }
+.attorney_image:hover::before { height: 100%; }
+.attorney_image h3 { position: absolute; bottom: 0px; left: 10%; color: rgb(255, 255, 255); opacity: 0; transition: all 0.4s ease-in-out 0s; }
+.attorney_image:hover h3 { bottom: 10%; opacity: 1; }
+.language:hover .heading span { width: 50px; }
+.language h3 { color: rgb(32, 79, 135); text-transform: uppercase; font-size: 24px; font-weight: 700; font-family: Montserrat, sans-serif; }
+.language p { color: rgb(176, 176, 177); font-family: "Open Sans", sans-serif; }
+.contact { background-color: rgb(40, 55, 126); }
+.contact h1 { color: rgb(255, 255, 255); }
+.contact form input { 
+    color: #bfd9ff;padding-left: 0;background-color: rgb(40, 55, 126); 
+    border-top: none; 
+    border-right: none; 
+    border-left: none; border-image: initial; border-bottom: 1px solid rgb(71, 89, 167); border-radius: 0px; 
+    font-family: Montserrat, sans-serif;}
+.contact form textarea { 
+    color: #bfd9ff;
+    padding-left: 0;
+    border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 1px solid rgb(71, 89, 167); background-color: rgb(40, 55, 126); border-radius: 0px; }
+.contact form button {padding: 7px 50px;border-radius: 0;background-color: #f2622c;border: none;font-family: Montserrat, sans-serif;font-size: 12px;}
+.contact form input:focus,.contact form textarea:focus{
+    background: transparent;
+    box-shadow: none;
+    caret-color: #86b7fe;
     color: #fff;
-    font-weight: 700;
-    font-size: 62px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
 }
-.hg{
-    min-height: 90vh;
-    align-items: center;
-}
-.icon{
-    position: absolute;
-    top:80%;
-    left:50%;
-    transform: translateX(-50%);
-    color: #ffffff;
-    font-size: 20px;
-    animation: updown 1s linear infinite;
-    
-}
-@keyframes updown{
-    0%{
-        top:80%;
-    }
-    100%{
-        top:85%;
-    }
-}
+.contact form input::placeholder,.contact form textarea::placeholder{
+    color: #86b7fe;
+    opacity: .6;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
 
-.who_we_are span{
-    display: inline-block;
-    width: 0px;
-    height: 3px;
-    background-color: #f2622c;
-    transition: .4s all ease-in-out;
 }
-.who_we_are:hover span{
-    width: 50px;
+.contact form button:focus{
+    box-shadow: none;
 }
-.who_we_are h1{
-    color: #204f87;
-    text-transform: uppercase;
-    font-size: 35px;
-    font-weight: 700px;
-    font-family: 'Montserrat', sans-serif;
+footer{
+    background-color: #0c1234;
 }
-.who_we_are p{
-    color: #b0b0b1;
-    font-family: 'Open Sans', sans-serif;
-    
+footer p{
+    margin-bottom: 0;
+    color: #616ca8;
 }
-.what_we_do{
-    background-color: #f7f8f8;
-    background-image: url(../images/what_we_do.png);
-    background-position-x: right;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size: 60%;
-}
-.heading span{
-    display: inline-block;
-    width: 0px;
-    height: 3px;
-    background-color: #f2622c;
-    transition: .4s all ease-in-out;
-}
-.what_we_do:hover .heading span{
-    width: 50px;
-}
-.heading h1{
-    color: #204f87;
-    text-transform: uppercase;
-    font-size: 35px;
-    font-weight: 700px;
-    font-family: 'Montserrat', sans-serif;
-}
-.img{
-    position: relative;
-}
-.img::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2b3083+100&0+0,1+100 */
-background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(43,48,131,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(43,48,131,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(43,48,131,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#2b3083',GradientType=0 ); /* IE6-9 */
-transition: .4s all ease-in-out;
-}
-.img:hover::before{
-    height: 100%;
-}
-
-.img h3{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 24px;
-    opacity: 0;
-    transition: .4s all ease-in-out;
-    font-family: 'Montserrat', sans-serif;
-}
-.img i {
-    position: absolute;
-    top: 80%;
-    left: 40%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 30px;
-    opacity: 0;
-    transition: .4s all ease-in-out;
-}
-.img:hover h3{
-    opacity:1;
-    top:50%
-}
-.img:hover i{
-    opacity:1;
-    left:50%;
+footer i{
+    color: #b1b7dd;
+    padding-left: 3em;
 }
